@@ -2,13 +2,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Phat Vu</title>
+        <title> Phat Vu Main</title>
         <link rel = "stylesheet" href="styles.css">
     </head>
     <body>
         <div class = "wrapper">
             <div class="title">
-                <h1>Phat Vu</h1>
+                <h1>Phat Vu Lab 2: CSS Selectors</h1>
             </div>
         </div>
 
@@ -16,17 +16,15 @@
             <a href = "selectors.html">Selectors</a>
             <a href="index.html">Main Page</a>
         </nav>
-
-        <P>I'm a senior in <strong>Info Sci.</strong></P>
-
-        <h2>Games I'm Playing</h2>
-        <ul>
-            <li>Destiny 2</li>
-            <li>Valorant</li>
-            <li>League of Legends</li>
-        </ul>
-
-        <h3>My Top 5 Favorite Albums</h3>
+        
+        <h2>Games I'm Playing and My Top 5 Favorite Albums</h2>
+        <div class = "subtitles"></div><P>I'm a senior in Info Sci.</P></div>
+        <div class = "section_1">
+            <ul>
+                <li>Destiny 2</li>
+                <li>Valorant</li>
+                <li>League of Legends</li>
+            </ul>
         <ol>
             <li>Culture II<br/><p>There were some great hits like <em>Narcos</em>, 
                 Walk It Talk It, and Stir Fry.</p></li>
@@ -40,15 +38,35 @@
             <li>always<br/><p>Every song in this album made me feel some 
                 type of way. I love keshi's voice.</p></li>
         </ol>
+    </div>
 
-        <h4>Images</h4>
-        <img src= 'images/mochi.gif' alt='A mochi gif'/>
-        <img src= 'images/mochi.png' alt='A mochi png'/>
-        <img src= 'images/mochi.svg' alt='A mochi svg'/>
-        <img src= 'images/mochi.jpg' alt='A mochi jpg'/>
-
+    <div class = "section_2">
+        <h3>Let's Try Some Inline Elements</h3>
+        <p>Sometimes you want to <em>draw attention to something</em> in a line of text.</p></br>
+        <p>Sometimes you want to <strong>strongly emphasize something</strong>in the text.</p></br>
+        <p>Sometimes you want to <em><strong>do both.</strong></em></p>
+    </div>
+    <div class = "section_3">
+        <h4>Empty Elements</h4>
+        <p>Softline breaks can't wrap anything.</br>
+        Neither can image tags, or hardlines.</br>
+        Add a hard line under here, and break the previous two lines using a soft line break.
         <hr/>
+    </p>
+    </div>
+<div class = "section_4">
+    <h2>Images</h2>
+    <div class = "carousel">
+        <div class = "slides">
+        <img src= 'images/onigiri_1.png' alt='An onigiri with mouth open'/>
+        <img src= 'images/onigiri_2.png' alt='An smiling onigiri'/>
+        <img src= 'images/onigiri_3.png' alt='An onigiri with eyes closed'/>
+        <img src= 'images/onigiri_4.png' alt='An onigiri with big eyes'/>
+    </div>
+</div>
+</div>
 
-        <a href="https://github.com/PhatoVu/INST377-Lab-Work.git"> My class repository</a>
+
+        <a href="https://github.com/PhatoVu/INST377-Lab-Work.git"> My github repository can be found here.</a>
     </body>
 </html>
