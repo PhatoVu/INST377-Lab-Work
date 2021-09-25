@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .menu-container {
+    color: #fff;
+    background-color: #5995DA;  /* Blue */
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu {
+    border: 1px solid #fff;  /* For debugging */
+    width: 900px;
+    justify-content: space-between;
+  }
+
+  .links { 
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .login {
+    margin-left: 20px;
+  }
+  
+  .title{
+    display: flex;
+    background-color: rgba(0,139, 139,0.8);
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 0;
+    font-size: 10px;
+    
+  }
+  .header-container {
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+.photo-grid-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .photo-grid {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .photo-grid-item {
+    border: 1px solid #fff;
+    width: 300px;
+    height: 300px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-item {
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;
+  }
+  .footer-one,
+  .footer-three {
+    background-color: #5995DA;
+    flex: initial;
+    width: 300px;
+  }
+  .signup {
+    margin-left: auto;
+  }  
+
+.carousel{
+      overflow:hidden;
+      position: relative;
+  }
+  
+.carousel .carousel_item,
+.carousel .carousel_item-hidden {
+    display: none;
+}
+ 
+.carousel .carousel_item img{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.carousel .carousel_item-visible{
+    display: block;
+}
+
+.carousel .prev {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateX(25%);
+}
+
+.carousel .next{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateX(70%); 
+}
+
+button:focus{
+  background: orange;
+}
