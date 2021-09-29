@@ -9,7 +9,7 @@ body {
   padding: 0;
   font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’,
     ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
-  background-color: darkslategray;
+  background-color: rgb(80, 12, 80);
 }
 
 /* Page Layout */
@@ -20,8 +20,86 @@ body {
 
 .wrapper {
   display: flex;
+  margin: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  flex-direction: column;
 }
 .container {
   max-width: 960px;
   margin-top: 25px;
+}
+
+.header{
+  background-color: rgb(61, 199, 199);
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 3px;
+  border-color: black;
+  margin: 20px 0;
+  display: inline-block;
+}
+
+.speaker-form {
+  background-color: #F6F7F8;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 250px;
+  padding-top: 20px;
+  padding-right: 20px;
+  margin: 0 0px 40px 0;
+  font-size: 15px;
+  position: relative;
+  left: 120px;
+  top: 10px;
+  flex-direction: column;
+
+}
+
+.form-row {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 50px;
+}
+
+.form-row input[type='text'] {
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-radius: 0 0 4px;;
+  width: 80%;
+  padding: 7px;
+  font-size: 10px;
+  margin-bottom: 20px;
+}
+
+.form-row label {
+  margin-bottom: 15px;
+}
+
+.legacy-form-row {
+  border: none;
+  margin-bottom: 40px;
+  margin-left: 50px;
+}
+
+.legacy-form-row legend {
+  margin-bottom: 15px;
+}
+
+.legacy-form-row .radio-label {
+  display: block;
+  font-size: 14px;
+  padding: 0 20px 0 10px;
+}
+
+.legacy-form-row input[type='radio'] {
+  margin-top: 2px;
+}
+  
+.legacy-form-row .radio-label,
+.legacy-form-row input[type='radio'] {
+  float: left;
 }
