@@ -6,41 +6,52 @@
     </head>
 
     <body>
-        <div class = 'wrapper'>
-        <div class ='header'>
-            <h1>Phat Vu's Lab 5</h1>
-        </div>
-    
-
-        <div class="speaker-form">
-            <div class='form-row'>
-                <label for='first-name'><b>First Name</b></label>
-                <input id='first-name' name='first-name' type='text'/>
-                <label for='last-name'><b>Last Name</b></label>
-                <input id='last-name' name='last-name' type='text'/>
+        <div class = 'container is-fluid'>
+            <div class = 'title'>
+                <h1><b>Phat Vu's Lab 5</h1>
             </div>
-            <fieldset class='legacy-form-row'>
-                <legend><b>Veggie or Vegan?</b></legend>
-                <input id='diet-type-1'
-                       name='diet-type'
-                       type='radio'
-                       value='Yes' />
-                <label for='diet-type-1' class='radio-label'>Yes</label>
-                <input id='diet-type-2'
-                       name='diet-type'
-                       type='radio'
-                       value='No'
-                       checked />
-                <label for='diet-type-2' class='radio-label'>No</label>
-              </fieldset>
-            
-                <button>Submit</button>
-                
         </div>
 
-        
-
-    </div>
+    <div class = 'columns is-vcentered is-centered is-3'>
+        <div class = ' column is-one-fifth'>
+            <div class = 'box'>
+                <div class="field">
+                    <label class="label">First Name</label>
+                    <div class="control">
+                        <input class = 'input is-small' id = 'first-name' class="input" type="text">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Last Name</label>
+                    <div class="control">
+                        <input class = 'input is-small' id = 'last-name' class="input" type="text">
+                    </div>
+                </div>
+                <div class = 'field'>
+                    <label>Veggie or Vegan?</label>
+                    <div class="control">
+                        <label class="radio"> 
+                            <input type="radio" name="answer">
+                            Yes
+                        </label>
+                        <label class="radio">
+                        <input type="radio" name="answer">
+                        No
+                        </label>
+                    </div>
+                </div>
+                <form action = "/api"> 
+                    <div class="control">
+                        <button class="button is-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class = 'column is-one-third'>
+            <div class = 'box'>
+                This is going to be something in two weeks.
+            </div>
+        </div>
     </div>
     </body>
 </html>
