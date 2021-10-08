@@ -6,33 +6,13 @@
     </head>
     <body>
         <h1>Assignment 6</h1>
-        <form class = '.search'>
+        <form class = 'search'>
             <input type='text' id='searchbar' name='searchbar'>
         </form>
-        <script>
-            const endpoint ='https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json'
+        <ul class = suggestions>
 
-            const restaurants =[];
-
-            fetch(endpoint)
-            .then(blob => blob.json())
-            .then(data => restaurants.push(...data))
-
-            function findMatches(wordToMatch, restaurants){
-                return restaurants.filter(place =>{
-                    const regex = new RegExp(wordToMatch, 'gi')
-                    return place.zip.match(regex)
-                })
-            }
-
-            function displayMatches() {
-                console.log(this.value);
-            }
-            
-            const searchInput = document.querySelector('.form');
-            const suggestions = document.querySelector('.suggestions');
-
-            searchInput.addEventListener('change',displayMatches);
+        </ul>
+        <script src='script.js'>
 
         </script>
     </body>
