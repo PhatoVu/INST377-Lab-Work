@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Phat Vu Lab 7</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+        <link rel='stylesheet' href='styles.css'>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+          
+    </head>
+    <body>
+    
+    <h1 class ='heading'>Phat Vu Lab 7</h1>
+    <h2 class = 'subheading'>Zip Code Food Search</h2>
+    <h3 class = 'search'>Search</h3>
+    <div class='row'>
+        <div class = column>
+        <form class = 'search'>
+            <input type='text' id='searchbar' name='searchbar'>
+        </form>
+        <div class = 'container'>
+        <ul class = suggestions></ul>
+        </div>
+        </div> 
+        <div class = column>
+            <div id="mapid"></div>
+        </div>
+    </div>
+    
+   <script src='script.js'></script>
+    </body>
+</html>
